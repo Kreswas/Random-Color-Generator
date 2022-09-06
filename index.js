@@ -7,7 +7,7 @@ import randomColor from 'randomcolor';
 
 const color = randomColor({
   luminosity: argv[3] ? argv[3] : 'random',
-  hue: [2] ? argv[2] : 'random',
+  hue: argv[2] ? argv[2] : 'random',
 });
 
 const theme = chalk.hex(color);
